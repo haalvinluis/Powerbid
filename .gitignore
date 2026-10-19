@@ -1,0 +1,174 @@
+# ========================================================
+# PowerBid Monorepo Root .gitignore
+# Covers Flutter/Dart, Node.js/TypeScript, PostgreSQL,
+# Android/iOS builds, IDEs, environment secrets, and caches.
+# ========================================================
+
+# 1. Operating System Files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+**/Thumbs.db
+desktop.ini
+**/desktop.ini
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# 2. Environment Files & Secrets
+# Ignore all .env files EXCEPT safe example templates
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+!.env.*.example
+!**/.env.*.example
+
+# Private cryptographic keys & certificates
+*.pem
+**/*.pem
+*.key
+**/*.key
+*.cert
+**/*.cert
+*.crt
+**/*.crt
+*.p12
+**/*.p12
+*.pfx
+**/*.pfx
+
+# 3. Android Signing, Keystores & Machine Paths
+# Machine-specific SDK paths
+local.properties
+**/local.properties
+# Keystore credentials and binary signing keys
+key.properties
+**/key.properties
+*.keystore
+**/*.keystore
+*.jks
+**/*.jks
+*.mobileprovision
+**/*.mobileprovision
+
+# 4. Node.js & TypeScript Server
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+shared/*.js
+npm-debug.log*
+**/npm-debug.log*
+yarn-debug.log*
+**/yarn-debug.log*
+yarn-error.log*
+**/yarn-error.log*
+pnpm-debug.log*
+**/pnpm-debug.log*
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# 5. Flutter & Dart Mobile App
+.dart_tool/
+**/.dart_tool/
+.flutter-plugins
+**/.flutter-plugins
+.flutter-plugins-dependencies
+**/.flutter-plugins-dependencies
+.packages
+**/.packages
+.pub-cache/
+**/.pub-cache/
+.pub/
+**/.pub/
+build/
+**/build/
+ephemeral/
+**/ephemeral/
+**/DerivedData/
+**/.last_build_id
+
+# Flutter Generated Platform Configuration (Contains developer local paths)
+**/Generated.xcconfig
+**/Flutter-Generated.xcconfig
+**/flutter_export_environment.sh
+**/flutter_native_integration.env
+**/GeneratedPluginRegistrant.*
+**/generated_plugins.cmake
+**/generated_plugin_registrant.*
+**/App.framework
+**/Flutter.framework
+**/Flutter.podspec
+**/app.flt
+
+# Compiled Application Binaries
+*.apk
+**/*.apk
+*.aab
+**/*.aab
+*.ipa
+**/*.ipa
+*.app
+**/*.app
+*.xctest
+**/*.xctest
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Android build cache
+.gradle/
+**/.gradle/
+**/android/app/debug/
+**/android/app/profile/
+**/android/app/release/
+**/captures/
+
+# 6. IDEs & Editor Files
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.iml
+**/*.iml
+*.ipr
+**/*.ipr
+*.iws
+**/*.iws
+*.sublime-project
+*.sublime-workspace
+
+# 7. Database Dumps & Local Data Storage
+*.sql.dump
+**/*.sql.dump
+*.dump
+**/*.dump
+*.dmp
+**/*.dmp
+*.rdb
+**/*.rdb
+*.sqlite
+**/*.sqlite
+*.sqlite3
+**/*.sqlite3
+*.db
+**/*.db
+
+# 8. Testing Coverage, Logs & Local Screenshots
+coverage/
+**/coverage/
+logs/
+**/logs/
+*.log
+**/*.log
+scratch/
+**/scratch/
+# Ignore root-level screenshot / screencap captures (preserve mobile/assets/)
+/*.png
+/*.jpg
+/*.jpeg
