@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — PowerBid</title>
+  <meta name="description" content="Official Privacy Policy for PowerBid. Transparent information regarding data collection, Google Sign-In, guest profiles, permissions, and security.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/powerbid_logo.png">
+</head>
+<body>
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="images/powerbid_logo.png" alt="PowerBid Logo" class="brand-logo">
+        <div class="brand-text-wrap">
+          <div class="brand-title">POWER<span class="gold">BID</span></div>
+          <div class="brand-tagline">Real-Time Multiplayer Auction</div>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="privacy.html" class="nav-link active">Privacy Policy</a>
+        <a href="terms.html" class="nav-link">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <article class="legal-wrapper">
+
+      <header class="legal-header">
+        <h1 class="legal-title">Privacy Policy</h1>
+        <div class="legal-meta">
+          <span><strong>Effective Date:</strong> October 25, 2026</span>
+          <span><strong>Application:</strong> PowerBid (Android)</span>
+          <span><strong>Package:</strong> com.auctiongame.mobile</span>
+        </div>
+      </header>
+
+      <div class="alert-panel">
+        <p>
+          <strong>Summary:</strong> PowerBid is committed to user privacy. We do not sell your personal information, track you across external apps, or collect sensitive personal data. Google Sign-In is optional and used solely to preserve your in-game coins, profile stats, and achievements across devices.
+        </p>
+      </div>
+
+      <!-- Section 1 -->
+      <section class="legal-section">
+        <h2>1. Introduction & Scope</h2>
+        <p>
+          This Privacy Policy explains how <strong>PowerBid</strong> ("we", "us", or "our") collects, uses, stores, and protects information when you install, access, or play the PowerBid mobile application on Android devices.
+        </p>
+        <p>
+          By downloading, accessing, or playing PowerBid, you agree to the collection and use of information in accordance with this policy. If you do not agree with any part of this policy, please discontinue use of the game.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="legal-section">
+        <h2>2. Information We Collect</h2>
+        <p>
+          PowerBid is designed with a privacy-by-design approach. We only collect the minimal technical and gameplay information necessary to facilitate real-time multiplayer auctions and save game progress.
+        </p>
+
+        <h3>A. Guest Accounts (Default Mode)</h3>
+        <p>
+          When you play PowerBid without signing in, you are assigned an anonymous guest profile. In this mode, we generate and store:
+        </p>
+        <ul>
+          <li><strong>Guest Identifier:</strong> A randomly generated pseudonymous identifier (e.g., <code>pb_guest_...</code>) stored in your device's local secure preferences.</li>
+          <li><strong>Public Player ID:</strong> A randomly assigned public game tag (e.g., <code>PB-ZYQGEX</code>) used by other players to invite you to multiplayer rooms.</li>
+          <li><strong>Chosen Display Name:</strong> The in-game handle or alias you set for yourself.</li>
+          <li><strong>Game Statistics:</strong> Virtual coin balances, match win/loss records, total power points, character cards owned, and unlocked achievement flags.</li>
+        </ul>
+
+        <h3>B. Google Sign-In (Optional Account Linking)</h3>
+        <p>
+          You may optionally choose to connect your Google account via Google Play Services to protect your virtual coin balances and match history. When you authenticate via Google:
+        </p>
+        <ul>
+          <li><strong>Google Subject Identifier (sub):</strong> A permanent, unique, pseudonymous identifier issued by Google to identify your account across sessions.</li>
+          <li><strong>Email Address:</strong> Your primary Google account email address (used solely as an account identifier for profile recovery).</li>
+          <li><strong>Profile Name:</strong> Your Google public display name (used to suggest an initial in-game display name).</li>
+        </ul>
+        <p>
+          <em>Note on Avatars:</em> PowerBid does not collect, download, or store your Google account profile photo. In-game avatars consist solely of default initials or custom photos selected from your device's local gallery, which remain stored locally on your device.
+        </p>
+        <p>
+          <strong>Security Note:</strong> We <em>never</em> receive, access, or store your Google account password. Authentication is cryptographically validated using Google's official OAuth 2.0 public key infrastructure (JWKS).
+        </p>
+
+        <h3>C. Device Permissions Used by PowerBid</h3>
+        <ul>
+          <li>
+            <strong>INTERNET & ACCESS_NETWORK_STATE:</strong> Required to establish real-time WebSocket (Socket.IO) connections with the game server, synchronize 1-second auction countdown timers, receive live bids, and update match results.
+          </li>
+          <li>
+            <strong>READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE (Android 12 and earlier, maxSdk 32):</strong> Only requested if you explicitly choose to select a custom avatar photo from your device's photo gallery. Selected images are processed locally on your device to create your avatar. PowerBid does not transmit your personal photo library to third parties.
+          </li>
+        </ul>
+
+        <h3>D. Information We DO NOT Collect</h3>
+        <ul>
+          <li><strong>Financial & Payment Data:</strong> PowerBid does not process real-world monetary transactions, credit card numbers, or bank details. All in-game coins are purely virtual game points.</li>
+          <li><strong>Precise Location Data:</strong> We do not request GPS, fine location, or coarse location permissions.</li>
+          <li><strong>Sensors & Telephony:</strong> We do not access your microphone, camera, contacts, phone state, or SMS.</li>
+          <li><strong>Third-Party Ad Tracking:</strong> PowerBid does not integrate third-party advertising SDKs (such as AdMob, Meta Audience Network, or tracking brokers).</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="legal-section">
+        <h2>3. How We Use Your Information</h2>
+        <p>We process collected data strictly for the following operational purposes:</p>
+        <ol>
+          <li><strong>Real-Time Matchmaking & Bidding:</strong> Hosting multiplayer rooms of up to 8 players, broadcasting bids, synchronizing auction timers, and resolving round winners.</li>
+          <li><strong>Server-Authoritative Coin Economy:</strong> Maintaining your virtual coin balance, enforcing the protected 500-coin starting balance floor, awarding match settlement coins (+150 for 1st place, +75 for 2nd place, +25 for eligible participants), and deducting pack unlock costs.</li>
+          <li><strong>Preventing Duplication & Cheating:</strong> Using idempotent match processing (tracking match completion IDs) to prevent duplicate coin claims, network replay attacks, and unauthorized game manipulation.</li>
+          <li><strong>Leaderboards & Match History:</strong> Displaying your recent match results and earned achievement badges.</li>
+        </ol>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="legal-section">
+        <h2>4. In-Game Visibility & Data Sharing</h2>
+        <p>
+          PowerBid is a multiplayer experience. During active gameplay and in public lobbies, other players in your game room can see:
+        </p>
+        <ul>
+          <li>Your in-game display name.</li>
+          <li>Your public Player ID (e.g., <code>PB-XXXXXX</code>).</li>
+          <li>Your chosen avatar.</li>
+          <li>Your bids, card acquisitions, and round scores during the match.</li>
+        </ul>
+        <p>
+          <strong>No Sale of Personal Data:</strong> We do not sell, rent, license, or monetize your personal data or gameplay records to data brokers, analytics marketing firms, or external advertisers.
+        </p>
+        <p>
+          <strong>Service Providers:</strong> We use reputable hosting infrastructure and database providers (such as cloud hosting and managed PostgreSQL databases) strictly under confidentiality to operate the game server.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="legal-section">
+        <h2>5. Data Storage, Retention & Security</h2>
+        <ul>
+          <li><strong>Network Communication & Encryption:</strong> Production releases are designed to transmit data exclusively over encrypted Transport Layer Security (TLS/HTTPS and WSS) connections to protect gameplay data and authentication tokens in transit. Internal development and local staging builds may utilize local network connections (HTTP/WS) solely during development and pre-release testing.</li>
+          <li><strong>Session Security:</strong> Authenticated sessions use cryptographically generated 256-bit random tokens, stored securely on the server using SHA-256 one-way hashing.</li>
+          <li><strong>Data Retention:</strong> Account data, virtual coin balances, and match history are retained on the game server for as long as your account remains active. Local guest profile data stored on your device can be erased at any time by clearing the application data cache in your device settings.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="legal-section">
+        <h2>6. Account Deletion & User Rights</h2>
+        <p>
+          In accordance with global data protection standards (including GDPR, CCPA, and Google Play Data Safety policies), players have full control over their data and the right to delete their accounts:
+        </p>
+        <ul>
+          <li>
+            <strong>Guest Players (Immediate Self-Service):</strong> Because guest profiles are stored locally on your device with pseudonymous identifiers, you can instantly and completely erase your guest profile, local coins, and cached match data at any time by selecting <em>Clear Data / Clear Storage</em> in Android System Settings &rarr; Apps &rarr; PowerBid, or by uninstalling the application.
+          </li>
+          <li>
+            <strong>Google-Linked Players (Manual Deletion Process):</strong>
+            <ul>
+              <li><strong>In-App Session Disconnect:</strong> You can disconnect your Google account session at any time inside the PowerBid Profile screen by tapping <em>Log Out (Switch to Guest)</em>.</li>
+              <li><strong>Permanent Server Deletion Request:</strong> If you wish to permanently expunge your account record, email association, linked profile, virtual coin ledger, and match history from our database, you can submit a manual deletion request by sending an email to our support address listed below.</li>
+              <li><strong>Required Information:</strong> To verify ownership and process the deletion, your email must include:
+                <ol>
+                  <li>The Google email address associated with your PowerBid account.</li>
+                  <li>Your public Player ID (e.g., <code>PB-XXXXXX</code>) displayed on your in-game Profile screen.</li>
+                </ol>
+              </li>
+              <li><strong>Processing & Verification:</strong> Upon receipt and verification of your request, the developer will manually delete your account row, associated authentication records, match history, and coin ledger from the database within 30 days. You will receive an email confirmation once the permanent deletion is complete.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="legal-section">
+        <h2>7. Children's Privacy</h2>
+        <p>
+          PowerBid does not knowingly collect or solicit personal information from children under the age of 13 (or under 16 where required by European data protection law). If we become aware that we have inadvertently collected personal data from a child below the applicable age without verified parental consent, we will promptly delete that information from our servers.
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="legal-section">
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our gameplay features, legal obligations, or platform standards. When updates occur, the revised policy will be posted on this public page with an updated "Effective Date." We encourage players to review this page periodically.
+        </p>
+      </section>
+
+      <!-- Section 9 -->
+      <section class="legal-section">
+        <h2>9. Developer & Contact Information</h2>
+        <p>
+          If you have any questions regarding this Privacy Policy, your personal data, or account deletion requests, please contact us:
+        </p>
+        <div class="alert-panel">
+          <p>
+            <strong>Publisher:</strong> Independent Developer<br>
+            <strong>Contact & Privacy Email:</strong> <a href="mailto:haalvin08@gmail.com" style="color: var(--gold-highlight);">haalvin08@gmail.com</a><br>
+            <strong>Project Repository:</strong> <a href="https://github.com/haalvinluis/Powerbid" style="color: var(--gold-highlight);" target="_blank" rel="noopener">github.com/haalvinluis/Powerbid</a><br>
+            <strong>Country / Region:</strong> India
+          </p>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms of Service</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 PowerBid. All rights reserved. Prepared for Google Play Store publication.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
